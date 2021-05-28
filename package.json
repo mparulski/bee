@@ -1,0 +1,27 @@
+{
+  "name": "@mparulski/bee",
+  "version": "0.0.1-alpha.1",
+  "description": "Browser Event Emitter",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mparulski/bee.git"
+  },
+  "author": "Michal Parulski <michal.parulski@gmail.com>",
+  "contributors": [
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mparulski/bee/issues"
+  },
+  "homepage": "https://github.com/mparulski/bee#readme",
+  "files": [
+    "bin",
+    "src"
+  ],
+  "dependencies": {
+  }
+}
