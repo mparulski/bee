@@ -11,8 +11,7 @@
     "url": "git+https://github.com/mparulski/bee.git"
   },
   "author": "Michal Parulski <michal.parulski@gmail.com>",
-  "contributors": [
-  ],
+  "contributors": [],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mparulski/bee/issues"
@@ -22,6 +21,8 @@
     "bin",
     "src"
   ],
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "2.3.0"
   }
 }
