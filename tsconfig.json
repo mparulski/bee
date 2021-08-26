@@ -1,27 +1,26 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "module": "es2015",
-    "target": "es2017",
-    "moduleResolution": "node",
-    "outDir": "dist",
-    "skipLibCheck": true,
-    "declaration": true,
-    "noEmit": false,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "alwaysStrict": true,
+    "checkJs": false,
+    "declaration": true,
+    "declarationMap": true,
+    "isolatedModules": false,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2020"
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "src/*.test.ts",
-    "src/*.test.tsx",
-    "src/__mocks__"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "src/*.test.ts", "src/*.test.tsx", "src/__mocks__"]
 }

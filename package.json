@@ -2,10 +2,11 @@
   "name": "@mparulski/bee",
   "version": "0.0.1-alpha.1",
   "description": "Browser Event Emitter",
-  "main": "src/index.js",
+  "main": "src/bee.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "webpack --config=webpack.dev.config.js",
+    "start": "webpack serve --config=webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,31 @@
     "bin",
     "src"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "prettier": "2.3.0",
-    "typescript": "4.3.2"
+    "@babel/cli": "7.14.5",
+    "@babel/core": "7.14.6",
+    "@babel/plugin-proposal-throw-expressions": "7.14.5",
+    "@babel/plugin-transform-arrow-functions": "7.14.5",
+    "@babel/plugin-transform-modules-commonjs": "7.14.5",
+    "@babel/preset-env": "7.14.7",
+    "@babel/preset-typescript": "7.14.5",
+    "@babel/runtime": "7.14.6",
+    "@mparulski/es-project-eslint": "0.1.0",
+    "@mparulski/es-project-maker-webpack": "0.3.0",
+    "@types/react": "17.0.14",
+    "@types/react-dom": "17.0.9",
+    "babel-loader": "8.2.2",
+    "css-loader": "5.2.7",
+    "eslint": "7.30.0",
+    "mini-css-extract-plugin": "2.1.0",
+    "prettier": "2.3.2",
+    "resolve-url-loader": "4.0.0",
+    "sass-loader": "12.1.0",
+    "ts-loader": "9.2.3",
+    "typescript": "4.3.5",
+    "webpack": "5.43.0",
+    "webpack-cli": "4.7.2",
+    "webpack-dev-server": "3.11.2",
+    "webpack-merge": "5.8.0"
   }
 }
