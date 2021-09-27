@@ -1,8 +1,8 @@
 const path = require('path')
 
-module.exports = dirname => {
+module.exports = env => {
   return {
-    entry: {bee: './src/index.ts'},
+    entry: {index: './src/index.ts'},
     output: {
       path: path.resolve(__dirname, '../dist'),
       filename: '[name].js',
