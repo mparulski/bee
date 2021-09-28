@@ -1,3 +1,3 @@
-import CustomEventTarget from './eventTarget/CustomEventTarget'
+import createEmitter from './factories/createEmitter'
 
-new CustomEventTarget()
+export default createEmitter()
