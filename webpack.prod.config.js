@@ -1,9 +1,11 @@
-#!/usr/bin/env node 
+#!/usr/bin/env node
 
-'use strict';
+'use strict'
 
-const path = require('path');
-const {merge} = require("webpack-merge");
-module.exports = env => merge(
-    require("@mparulski/es-project-maker-webpack/config/webpack.prod.config"), 
-    require(path.resolve("./config/webpack.prod.config.js"))(env))
+const path = require('path')
+const {merge} = require('webpack-merge')
+module.exports = env =>
+  merge(
+    require('@mparulski/es-project-maker-webpack/config/webpack.prod.config'),
+    require(path.resolve('./__config/webpack.prod.config.js'))(env),
+  )
