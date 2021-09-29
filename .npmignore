@@ -1,3 +1,8 @@
-dist/
-.idea
+.idea/**
+__config/**
+__docs/**
+node_modules/**
+src/**
+*.config.js
 *.iml
+tsconfig.js
