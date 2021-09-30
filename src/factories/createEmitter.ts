@@ -9,7 +9,13 @@ type Listeners = Map<string, Array<ListenerDefinition>>
 
 type Emit = (name: string, ...args: any) => void | never
 
-export default (): Emit => {
+type EmitMethods = {
+  on: (name: string, listener: Listener) => any
+}
+
+type Emitter = Emit & EmitMethods
+
+export default (): Emitter => {
   const listeners: Listeners = new Map()
   const queue: Map<string, any[]> = new Map()
   let isFire: boolean = false
@@ -41,7 +47,7 @@ export default (): Emit => {
         listenerDefinition.listener(...args)
 
         if (listenerDefinition.isOnce) {
-          //TODO removeCallback(name, listenerDefinition.listener)
+          // removeListener(name, listenerDefinition.listener)
         }
       })
     })
@@ -86,5 +92,5 @@ export default (): Emit => {
     },
   }
 
-  return Object.assign(emit, emitterOperations)
+  return <Emitter>Object.assign(emit, emitterOperations)
 }
